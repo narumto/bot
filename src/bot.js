@@ -1,18 +1,18 @@
 const { DisconnectReason, makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
-const { playBlackjack, buyCard, stopGame } = require('./games/blackjack');
-const { playSlotMachine } = require('./games/slot-machine');
-const { playRoulette } = require('./games/roulette');
-const { getMenu } = require('./info/menu');
-const { getKatana } = require('./info/katana-rules');
-const { getContract } = require('./info/contract-rules');
-const { getPShop, getPVile } = require('./info/points');
-const { getCronogram } = require('./info/cronogram-vile');
-const { getFicha } = require('./info/ficha-rec')
-const { getShopVile, getShopRPG, getMenuVila, getFichaCompraAme, getFichaCompraRPG } = require('./info/shop-vile')
-const { rulesApostas, limApostas } = require('./coliseu/info-apostas')
-const { escolherArenaAleatoria, sortearPatente, sortearElemento } = require('./coliseu/sorteios')
-const { processarAposta } = require('./coliseu/apostas')
-const { placaInicial, placaCombo, placaFinal, getKunais } = require('./combo/combochu')
+const { playBlackjack, buyCard, stopGame } = require('../games/blackjack');
+const { playSlotMachine } = require('../games/slot-machine');
+const { playRoulette } = require('../games/roulette');
+const { getMenu } = require('../info/menu');
+const { getKatana } = require('../info/katana-rules');
+const { getContract } = require('../info/contract-rules');
+const { getPShop, getPVile } = require('../info/points');
+const { getCronogram } = require('../info/cronogram-vile');
+const { getFicha } = require('../info/ficha-rec')
+const { getShopVile, getShopRPG, getMenuVila, getFichaCompraAme, getFichaCompraRPG } = require('../info/shop-vile')
+const { rulesApostas, limApostas } = require('../coliseu/info-apostas')
+const { escolherArenaAleatoria, sortearPatente, sortearElemento } = require('../coliseu/sorteios')
+const { processarAposta } = require('../coliseu/apostas')
+const { placaInicial, placaCombo, placaFinal, getKunais } = require('../combo/combochu')
 
 // IDs de Grupos
 const groupIds = ['120363296203601720@g.us', '556384043631-1485535224@g.us', '120363278902077019@g.us'];
