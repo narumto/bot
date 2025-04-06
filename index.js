@@ -10,5 +10,5 @@ app.listen(3000, () => {
 })
 
 // Importa e inicia o bot
-const startBot = require('./bot') // ou './src/bot' se estiver em src
+const startBot = require('./src/bot') // ou './src/bot' se estiver em src
 startBot()
