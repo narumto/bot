@@ -13,6 +13,7 @@ const { rulesApostas, limApostas } = require('../coliseu/info-apostas')
 const { escolherArenaAleatoria, sortearPatente, sortearElemento } = require('../coliseu/sorteios')
 const { processarAposta } = require('../coliseu/apostas')
 const { placaInicial, placaCombo, placaFinal, getKunais } = require('../combo/combochu')
+const { placaJInicial, placaJFinal } = require('../combo/combojou')
 
 // IDs de Grupos
 const groupIds = ['120363296203601720@g.us', '556384043631-1485535224@g.us', '120363278902077019@g.us'];
@@ -160,11 +161,19 @@ function startBot() {
                 const response = getKunais();
                 await sock.sendMessage(msg.key.remoteJid, { text : response});
             }
-            if(text.startsWith('Boa') || text.startsWith('boa')) {
+            if(text.startsWith('Boa luta') || text.startsWith('boa luta') || text.startsWith('BOA luta')) {
                 if (msg.key.fromMe) {
                     return; // Ignora a mensagem
                 }
                 const response = 'Boa luta'
+                await sock.sendMessage(msg.key.remoteJid, { text : response});
+            }
+            if(text.startsWith('/pji')){
+                const response = placaJInicial(nome, cla, rank);
+                await sock.sendMessage(msg.key.remoteJid, { text : response});
+            }
+            if(text.startsWith('/pjf')){
+                const response = placaJFinal(nome, cla, rank, gasto);
                 await sock.sendMessage(msg.key.remoteJid, { text : response});
             }
     }

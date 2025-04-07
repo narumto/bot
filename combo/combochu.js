@@ -1,8 +1,8 @@
 function placaInicial(nome, cla, rank) {
     // Obtém a data atual
     const data = new Date();
-    const dia = String(data.getDate()).padStart(2, '0'); // Dia com dois dígitos
-    const mes = String(data.getMonth() + 1).padStart(2, '0'); // Mês (Janeiro = 0, então somamos 1)
+    const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
+    const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
     const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
 
     return `*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
@@ -21,12 +21,12 @@ function placaInicial(nome, cla, rank) {
 *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*`;
 }
 
-function placaCombo (nome, cla, rank, gasto) {
-        // Obtém a data atual
-        const data = new Date();
-        const dia = String(data.getDate()).padStart(2, '0'); // Dia com dois dígitos
-        const mes = String(data.getMonth() + 1).padStart(2, '0'); // Mês (Janeiro = 0, então somamos 1)
-        const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
+function placaCombo(nome, cla, rank, gasto) {
+    // Obtém a data atual
+    const data = new Date();
+    const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
+    const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
+    const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
     return `*♍✋🏻❪ Arayuru Naru Yashinoki ❫ ✋🏻♍*
       _( Palmas De Todos Elementos V2 )_
 
@@ -144,14 +144,14 @@ O consumo de chakra aumenta significativamente devido à complexidade e poder da
 
 *(🈹🌪)( Descrição ):* O usuário Guilherme conjura poucas flores brancas que flutuam ao redor do oponente, movidas por uma brisa leve. Essas flores se fixam na pele do inimigo, liberando um chakra de vento que causa pequenas incômodos de dormência. O oponente começa a se sentir mal e incapacitado para completar seu jutsu, enquanto isso, os ventos se intensificam acertando o oponente e causando um grande dano.
 *➖ Falha O Jutsu Do Adversário❕*
-`
+`;
 }
 
 function placaFinal(nome, cla, rank, gasto) {
     // Obtém a data atual
     const data = new Date();
-    const dia = String(data.getDate()).padStart(2, '0'); // Dia com dois dígitos
-    const mes = String(data.getMonth() + 1).padStart(2, '0'); // Mês (Janeiro = 0, então somamos 1)
+    const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
+    const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
     const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
 
     return `*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
@@ -195,5 +195,5 @@ module.exports = {
     placaInicial,
     placaCombo,
     placaFinal,
-    getKunais
-}
+    getKunais,
+};
